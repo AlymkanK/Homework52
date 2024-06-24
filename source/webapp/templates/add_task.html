@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить задачу</title>
+</head>
+<body>
+
+<h1>добавить задачу</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">ДобавитьЗадачу</button>
+    </form>
+
+</body>
+</html>
